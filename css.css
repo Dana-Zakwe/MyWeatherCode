@@ -1,0 +1,159 @@
+/* General styles */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa;
+    /* Light blue background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: #00796b;
+    /* Dark teal color */
+}
+
+
+/* Navigation styles */
+
+nav {
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #00796b;
+    /* Dark teal color */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #004d40;
+    /* Darker teal on hover */
+}
+
+
+/* Home Page styles */
+
+.home-page {
+    text-align: center;
+    padding: 50px;
+}
+
+
+/* Login Page styles */
+
+.login-page {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid #004d40;
+    /* Navy border color */
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.form-container {
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #00796b;
+    /* Dark teal border color */
+    border-radius: 5px;
+}
+
+button {
+    background-color: #00796b;
+    /* Dark teal button color */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #004d40;
+    /* Darker teal on hover */
+}
+
+
+/* About Page styles */
+
+.about-page {
+    padding: 20px;
+}
+
+
+/* Dashboard Page styles */
+
+.dashboard-page {
+    padding: 20px;
+}
+
+.progress-tracking {
+    margin: 20px 0;
+}
+
+
+/* Performance indicators */
+
+.performance {
+    display: flex;
+    align-items: center;
+}
+
+.performance-square {
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+}
+
+
+/* Emojis for performance indicators */
+
+.performance-indicator {
+    font-size: 24px;
+    /* Size of the emoji */
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 600px) {
+    nav ul {
+        padding: 0;
+    }
+    nav li {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .login-page {
+        width: 90%;
+    }
+}

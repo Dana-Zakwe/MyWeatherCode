@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Progress Monitoring System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- About Page -->
+    <div class="about-page">
+        <header>
+            <h1>About the Progress Monitoring System</h1>
+        </header>
+        <p>This system is designed to help learners and teachers track academic activities, submissions, and progress. It offers a user-friendly interface with dynamic features to support students at different levels.</p>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+            </ul>
+        </nav>
+
+        <!-- Objectives Section (Hidden by default) -->
+        <div id="objectives-section">
+            <h2>Objective:</h2>
+            <p>A comprehensive, user-friendly, and secure web platform to facilitate efficient tutoring and progress tracking, enhancing the educational experience for students, teachers, and administrators.</p>
+
+            <h3>Specific Objectives:</h3>
+
+            <h4>For Students:</h4>
+            <ul>
+                <li>Easy access to tutoring schedules and materials</li>
+                <li>Personalized learning plans and progress tracking</li>
+                <li>Interactive tools for engagement and feedback</li>
+                <li>Secure messaging system for communication with teachers</li>
+            </ul>
+
+            <h4>For Teachers:</h4>
+            <ul>
+                <li>Streamlined tutoring scheduling and management</li>
+                <li>Automated progress tracking and reporting</li>
+                <li>Access to student learning plans and materials</li>
+                <li>Tools for creating and assigning interactive content</li>
+            </ul>
+
+            <h4>For Administrators:</h4>
+            <ul>
+                <li>Centralized dashboard for monitoring progress</li>
+                <li>Automated reporting and analytics</li>
+                <li>User management and access control</li>
+                <li>Integration with existing school management systems</li>
+            </ul>
+
+            <h3>Key Functionalities:</h3>
+            <ul>
+                <li>User registration and login</li>
+                <li>Tutoring scheduling and management</li>
+                <li>Progress tracking and analytics</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- JavaScript code for toggling the objectives section -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const showObjectivesButton = document.getElementById('show-objectives');
+            const objectivesSection = document.getElementById('objectives-section');
+
+            showObjectivesButton.addEventListener('click', function(event) {
+                objectivesSection.style.display = objectivesSection.style.display === 'none' ? 'block' : 'none';
+            });
+        });
+    </script>
+</body>
+
+</html>
